@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .cont-child-top {
+        background: #9797d1;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .cont-child-top p {
+        align-self: flex-end;
+        padding-right: 50px;
+      }
+
+      .cont-child-top button {
+        height: 50px;
+        width: 100px;
+      }
+
+      .cont-child-bottom {
+        background: #ef8c8c;
+        flex: 3;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .cont-child-bottom > div {
+        width: 100%;
+        background: #c71b1b;
+      }
+
+      .cont-child-profile {
+        background: #000;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(50%, 90%);
+      }
+
+      .left-cont {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+      }
+
+      .profile-box {
+        width: 100%;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .profile-box-child {
+        height: 100px;
+        width: 100px;
+        background: #a9cd34;
+      }
+
+      .profile-neme {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .profile-neme-right {
+        height: 60px;
+        width: 40px;
+        background: #05d369;
+      }
+
+      .right-cont {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 50px;
+        align-items: center;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 50px;
+        column-gap: 10px;
+      }
+
+      .grid > div {
+        height: 200px;
+        width: 200px;
+        background: #ffffff;
+      }
+
+      .right-cont button {
+        height: 50px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cont-child-top">
+        <p>Abc</p>
+        <button>Cover Image</button>
+      </div>
+      <div class="cont-child-bottom">
+        <div class="left-cont">
+          <div class="profile-neme">
+            <div class="profile-neme-left">
+              <h3>Mantu Morya</h3>
+              <p>@mantu008</p>
+            </div>
+            <div class="profile-neme-right"></div>
+          </div>
+          <p class="profile-about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non
+            explicabo numquam consectetur, facere laboriosam porro! Optio hic
+            quia aspernatur harum ipsum at saepe tenetur. Illo nisi ducimus
+            facilis nulla.
+          </p>
+
+          <div class="profile-box">
+            <div class="profile-box-child"></div>
+            <div class="profile-box-child"></div>
+            <div class="profile-box-child"></div>
+          </div>
+        </div>
+        <div class="right-cont">
+          <div class="grid">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+          </div>
+          <button>See More</button>
+        </div>
+      </div>
+      <div class="cont-child-profile"></div>
+    </div>
+  </body>
+</html>

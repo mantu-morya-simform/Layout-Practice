@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+      }
+
+      .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+      }
+
+      .header,
+      .nav {
+        grid-column: 1/-1;
+        background: #d32020;
+        border: 1px solid #fff;
+      }
+
+      .nav {
+        background: #2384ab;
+      }
+
+      .aside {
+        grid-row: 3/7;
+        grid-column: 1/2;
+        background: #3dc5b5;
+        overflow-y: auto;
+      }
+
+      .cont {
+        grid-row: 3/5;
+        grid-column: 2/-1;
+        background: #4b2ac2;
+      }
+
+      .sec {
+        grid-row: 5/7;
+        grid-column: 2/-1;
+        background: #645747;
+      }
+
+      .foot {
+        grid-column: 1/-1;
+        background: #09ea6b;
+      }
+
+      .aside-text {
+        height: 120%;
+      }
+
+      @media (max-width: 678px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .container div {
+          height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="nav">Navigation</div>
+      <div class="aside">
+        <div class="aside-text">Aside</div>
+      </div>
+      <div class="cont">Content</div>
+      <div class="sec">Section</div>
+      <div class="foot">Footer</div>
+    </div>
+  </body>
+</html>

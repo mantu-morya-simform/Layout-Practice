@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+}
+
+.main {
+  height: calc(100vh - 80px);
+  display: flex;
+  border: 1px solid #000;
+}
+
+.main-1 {
+  width: 5%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.main-2 {
+  width: 45%;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  gap: 20px;
+  border: 1px solid #000;
+}
+
+.main-3 {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.main-4 {
+  width: 45%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #000;
+}
+
+.card {
+  height: 30%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  background: #afaeae;
+}
+
+.card-top {
+  height: 70%;
+  width: 100%;
+}
+
+.card-bottom {
+  height: 30%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.card-box {
+  height: 100%;
+  width: 20%;
+  background: #d49a9a;
+  border-radius: 10px;
+}
+
+.card-top p {
+  margin: 20px 10px;
+  text-align: end;
+  color: blue;
+}
+
+.main-4-img {
+  height: 60%;
+  width: 100%;
+  border: 1px dotted #000;
+}
+
+.main-4 button {
+  padding: 20px;
+  background: #d1a0a0;
+  border: none;
+  color: white;
+}
+
+.main-3-box,
+.main-1-bottom {
+  height: 60px;
+  width: 60px;
+  background: #d49a9a;
+  border-radius: 10px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-profile,
+.main-1-top div {
+  height: 50px;
+  width: 50px;
+  background: #d49a9a;
+  border-radius: 50%;
+}
+
+.main-1-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

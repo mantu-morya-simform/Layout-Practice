@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  background: #d8a2a2;
+  position: relative;
+}
+
+.left-card,
+.right-card {
+  height: 100%;
+}
+
+.left-card {
+  background: #2c9e2c;
+  width: 30%;
+}
+
+.right-card {
+  background: #1db3ab;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+}
+
+.round-circle {
+  background: #133bbb;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  /* top: 10%;
+
+  left: 25%; */
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 10px solid #1db3ab;
+}
+
+.first-para {
+  width: 100%;
+  text-align: end;
+  /* align-self */
+}
+
+.head-right {
+  width: 100%;
+}
