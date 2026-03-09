@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 4% 12% 18% 14% 17% 14% 17% 4%;
+  border: 1px solid #000;
+}
+
+.container > div {
+  border: 1px solid #000;
+}
+
+.one,
+.eight {
+  background: #1971c2;
+}
+
+.two,
+.four,
+.five,
+.six {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.two-top,
+.two-bottom,
+.four-top,
+.five-top,
+.seven-top,
+.four-bottom > div {
+  height: 100%;
+  background: #d1cdcd;
+}
+
+.two-top {
+  height: 50px;
+  width: 50px;
+}
+
+.two-bottom,
+.four-top,
+.five-top,
+.seven-top {
+  height: 30px;
+  width: 220px;
+}
+
+.three {
+  background: #37b24d;
+}
+
+.four-bottom > div {
+  height: 70px;
+  width: 200px;
+}
+
+.four-bottom {
+  display: flex;
+  gap: 70px;
+}
+
+.five {
+  flex-direction: row;
+  gap: 70px;
+  background: #be4bdb;
+}
+
+.five > div {
+  height: 90%;
+  width: 15%;
+  background: #ffff;
+}
+
+.five-bottom,
+.seven-bottom {
+  height: 60%;
+  width: 50%;
+  background: #d1cdcd;
+}
+
+.seven {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.seven-left,
+.seven-right {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.seven-bottom {
+  width: 80%;
+}
+
+.seven-left {
+  background: #ff922b;
+}
+
+.seven-right {
+  background: #fd7e14;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card-top,
+.card-bottom {
+  background: #d1cdcd;
+}
+
+.card-top {
+  height: 20%;
+  width: 80%;
+}
+
+.card-bottom {
+  height: 35%;
+  width: 80%;
+}
