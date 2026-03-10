@@ -52,6 +52,7 @@ html {
   grid-template-columns: repeat(3, 1fr);
   padding: 20px 0px;
   column-gap: 20px;
+  row-gap: 20px;
 }
 
 .main-second {
@@ -64,6 +65,7 @@ html {
 .main-second div {
   height: 100%;
   width: 100%;
+  min-height: 30px;
   background: #eeb517;
 }
 
@@ -77,5 +79,6 @@ html {
 .main-third div {
   height: 100%;
   width: 100%;
+  min-height: 30px;
   background: #141414;
 }
