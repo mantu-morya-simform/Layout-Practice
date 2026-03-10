@@ -41,12 +41,17 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
 }
 
 .mid-aside-btn button {
   padding: 20px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
   background: #9085cf;
 }
 
@@ -84,7 +89,7 @@ html {
 }
 
 .nav-left input {
-  width: 300px;
+  max-width: 300px;
   padding: 10px 30px;
 }
 
@@ -108,7 +113,6 @@ html {
   height: 50%;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
   gap: 20px;
 }
 
@@ -137,4 +141,8 @@ html {
   height: 30%;
   display: flex;
   background: #0dc0d8;
+}
+
+.left-sidebar-hemburger {
+  display: none;
 }
